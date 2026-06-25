@@ -1,14 +1,12 @@
 # TOMORIBA Website
 
-## 使い方
+- `index.html`: サイト本体
+- `style.css`: デザイン
+- `script.js`: ヘッダーの動き
 
-1. `index.html` をブラウザで開く
-2. GoogleフォームURLを差し替える
-   - `https://forms.gle/your-form-url` の部分
-3. Instagram / TikTokのURLを差し替える
-4. 開催日程を増やす場合は、`event-card` をコピーして編集する
+## 更新方法
+GitHubでファイルを編集し、Commit changesを押すとVercelが自動更新します。
 
-## 公開方法
-
-おすすめは Vercel / Netlify / GitHub Pages です。
-最初は無料で公開できます。
+## メモ
+Dress Code用InstagramはURL追加待ち。
+写真は現在仮画像。実際の写真を追加後、差し替え予定。
