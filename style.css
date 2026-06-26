@@ -112,10 +112,11 @@ img {
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(42px, 9vw, 82px);
-  line-height: 1.12;
-  margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 7vw, 68px);
+    line-height: 1.05;
+    margin-bottom: 60px;
+    white-space: nowrap;
 }
 
 h2 {
