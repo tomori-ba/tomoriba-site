@@ -77,13 +77,13 @@ img {
 .hero {
   position: relative;
   min-height: 100vh;
-  padding: 112px 5vw 70px;
+  padding: 80px 5vw 90px;
   display: flex;
   align-items: center;
   overflow: hidden;
   color: var(--white);
   background:
-    linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.46), rgba(0,0,0,.64)),
+    linear-gradient(90deg, rgba(0,0,0,.88), rgba(0,0,0,.60), rgba(0,0,0,.64)),
     url("hero.JPG") center/cover;
 }
 
@@ -113,11 +113,11 @@ img {
 }
 
 .eyebrow {
-  color: var(--gold);
-  letter-spacing: 0.22em;
-  font-size: 12px;
-  font-weight: 800;
-  margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .25em;
+    color: #c79d5a;
+    margin-bottom: 24px;
 }
 
 h1 {
