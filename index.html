@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>TOMORIBA｜大阪・神戸の交流会</title>
-  <meta name="description" content="TOMORIBAは大阪・神戸を中心に開催している交流会です。年齢別・コンセプト別に、自然につながれる場をつくっています。" />
+  <meta name="description" content="TOMORIBAは大阪・神戸を中心に、年齢別・コンセプト別の交流会を開催しています。初参加・一人参加の方も自然につながれる場をつくります。" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- =========================
+       Header
+  ========================== -->
   <header class="site-header">
-    <a href="#top" class="logo">TOMORIBA</a>
-    <nav class="nav">
+    <a href="#top" class="logo" aria-label="TOMORIBA トップへ">TOMORIBA</a>
+
+    <nav class="nav" aria-label="メインナビゲーション">
       <a href="#schedule">開催日程</a>
       <a href="#mood">雰囲気</a>
       <a href="#sns">SNS</a>
@@ -21,24 +25,39 @@
   </header>
 
   <main id="top">
+    <!-- =========================
+         Hero
+         画像：images/hero.jpg
+    ========================== -->
     <section class="hero">
+      <div class="hero-overlay"></div>
+
       <div class="hero-content">
         <p class="eyebrow">OSAKA / KOBE COMMUNITY EVENT</p>
-        <h1>学校でも職場でもない、<br>もうひとつの居場所。</h1>
+
+        <h1>
+          学校でも職場でもない、<br>
+          もうひとつの居場所。
+        </h1>
+
         <p class="lead">
           大阪・神戸を中心に、年齢別・コンセプト別の交流会を開催しています。
           初参加・一人参加の方も、自然に話しやすい空間づくりを大切にしています。
         </p>
 
         <div class="hero-actions">
-          <a href="#schedule" class="main-button">開催日程を見る</a>
-          <a href="https://www.instagram.com/tomori_ba?igsh=bTBqNHI4dDB3ZjMw&utm_source=qr" target="_blank" rel="noopener" class="sub-button">Instagramを見る</a>
+          <a href="#schedule" class="button primary">開催日程を見る</a>
+          <a href="https://www.instagram.com/tomori_ba?igsh=bTBqNHI4dDB3ZjMw&utm_source=qr" target="_blank" rel="noopener" class="button ghost">Instagramを見る</a>
         </div>
       </div>
     </section>
 
+    <!-- =========================
+         Schedule
+         開催日程を変えるなら主にここ
+    ========================== -->
     <section id="schedule" class="section schedule-section">
-      <div class="section-title">
+      <div class="section-heading light">
         <p class="eyebrow">SCHEDULE</p>
         <h2>開催日程</h2>
         <p>各イベントの詳細をご確認のうえ、Googleフォームよりお申し込みください。</p>
@@ -46,9 +65,9 @@
 
       <div class="event-list">
         <article class="event-card">
-          <div class="event-head">
+          <div class="event-top">
             <div>
-              <p class="event-label">OSAKA</p>
+              <p class="event-area">OSAKA</p>
               <h3>7/11（土）大阪｜TOMORIBA Friends</h3>
             </div>
             <span class="status">受付中</span>
@@ -71,9 +90,9 @@
         </article>
 
         <article class="event-card">
-          <div class="event-head">
+          <div class="event-top">
             <div>
-              <p class="event-label">KOBE</p>
+              <p class="event-area">KOBE</p>
               <h3>7/18（土）神戸｜20代交流会</h3>
             </div>
             <span class="status">受付中</span>
@@ -97,33 +116,46 @@
       </div>
     </section>
 
+    <!-- =========================
+         Mood
+         画像：
+         images/atmosphere1.jpg
+         images/atmosphere2.jpg
+         images/atmosphere3.jpg
+    ========================== -->
     <section id="mood" class="section mood-section">
-      <div class="section-title">
+      <div class="section-heading">
         <p class="eyebrow">MOOD</p>
         <h2>トモリバの雰囲気</h2>
-        <p>大人数の賑わいと、自然に話せる距離感。初めてでも入りやすい空気を大切にしています。</p>
+        <p>
+          大人数の賑わいと、自然に話せる距離感。
+          初めてでも入りやすい空気を大切にしています。
+        </p>
       </div>
 
-      <div class="mood-grid">
-        <article class="mood-card large">
-          <img src="images/mood-smile.jpg" alt="楽しそうに交流している参加者の様子">
-          <div>
+      <div class="mood-layout">
+        <article class="feature-card">
+          <img src="images/atmosphere1.jpg" alt="TOMORIBAで自然に会話している様子" />
+          <div class="feature-text">
+            <span>01</span>
             <h3>自然に会話が生まれる</h3>
             <p>初参加でも、ふとしたきっかけで話が始まるような場づくりを意識しています。</p>
           </div>
         </article>
 
-        <article class="mood-card">
-          <img src="images/mood-talk.jpg" alt="落ち着いて話せるイベントの様子">
-          <div>
+        <article class="feature-card">
+          <img src="images/atmosphere2.jpg" alt="TOMORIBAの落ち着いた交流の様子" />
+          <div class="feature-text">
+            <span>02</span>
             <h3>一人参加でも入りやすい</h3>
             <p>参加者の多くが一人参加です。落ち着いて話せる雰囲気も大切にしています。</p>
           </div>
         </article>
 
-        <article class="mood-card">
-          <img src="images/mood-venue.jpg" alt="会場全体の雰囲気">
-          <div>
+        <article class="feature-card">
+          <img src="images/atmosphere3.jpg" alt="TOMORIBAの会場の雰囲気" />
+          <div class="feature-text">
+            <span>03</span>
             <h3>会場ごとの空気感</h3>
             <p>開催ごとに、場所やコンセプトに合わせた雰囲気づくりを行っています。</p>
           </div>
@@ -131,45 +163,75 @@
       </div>
     </section>
 
-    <section class="section gallery-section">
-      <div class="section-title">
-        <p class="eyebrow">GALLERY</p>
-        <h2>開催の記録</h2>
-      </div>
-
-      <div class="gallery">
-        <img src="images/gallery-toast.jpg" alt="乾杯の様子">
-        <img src="images/gallery-bar.jpg" alt="バーでの交流の様子">
-        <img src="images/gallery-party.jpg" alt="賑わいのあるイベント会場">
-      </div>
-    </section>
-
+    <!-- =========================
+         About
+         画像：images/about.jpg
+    ========================== -->
     <section class="section about-section">
-      <div class="section-title">
+      <div class="about-photo">
+        <img src="images/about.jpg" alt="TOMORIBAで参加者同士が話している様子" />
+      </div>
+
+      <div class="about-content">
         <p class="eyebrow">ABOUT</p>
         <h2>TOMORIBAとは</h2>
-      </div>
 
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>一人参加でも入りやすい</h3>
-          <p>参加者の多くが一人参加です。初めての方でも過ごしやすい雰囲気づくりを大切にしています。</p>
-        </div>
+        <p class="about-lead">
+          学校や職場とは違う、新しいつながりが生まれる場所。
+          開催ごとに対象やテーマを設定し、自然につながりやすい交流の場をつくっています。
+        </p>
 
-        <div class="about-card">
-          <h3>年齢別・コンセプト別に開催</h3>
-          <p>開催ごとに対象やテーマを設定し、自然につながりやすい交流の場をつくっています。</p>
-        </div>
+        <div class="about-points">
+          <div>
+            <h3>一人参加歓迎</h3>
+            <p>初めての方でも過ごしやすいよう、自然に会話が生まれる空気を大切にしています。</p>
+          </div>
 
-        <div class="about-card">
-          <h3>安心して楽しめる場</h3>
-          <p>しつこい勧誘、マルチ、宗教、投資目的の参加は禁止しています。</p>
+          <div>
+            <h3>年齢別・コンセプト別に開催</h3>
+            <p>20代会、リピーター会、ドレスコードイベントなど、開催ごとにテーマを設定しています。</p>
+          </div>
+
+          <div>
+            <h3>安心して楽しめる場</h3>
+            <p>しつこい勧誘、マルチ、宗教、投資目的の参加は禁止しています。</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- =========================
+         Gallery
+         画像：
+         images/event1.jpg
+         images/event2.jpg
+         images/event3.jpg
+         images/venue1.jpg
+         images/venue2.jpg
+         images/venue3.jpg
+    ========================== -->
+    <section class="section gallery-section">
+      <div class="section-heading">
+        <p class="eyebrow">GALLERY</p>
+        <h2>開催の記録</h2>
+        <p>実際のイベントや会場の雰囲気を、写真でご覧いただけます。</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="images/event1.jpg" alt="TOMORIBAのイベント風景1" />
+        <img src="images/event2.jpg" alt="TOMORIBAのイベント風景2" />
+        <img src="images/event3.jpg" alt="TOMORIBAのイベント風景3" />
+        <img src="images/venue1.jpg" alt="TOMORIBAの会場風景1" />
+        <img src="images/venue2.jpg" alt="TOMORIBAの会場風景2" />
+        <img src="images/venue3.jpg" alt="TOMORIBAの会場風景3" />
+      </div>
+    </section>
+
+    <!-- =========================
+         SNS
+    ========================== -->
     <section id="sns" class="section sns-section">
-      <div class="section-title">
+      <div class="section-heading">
         <p class="eyebrow">SNS</p>
         <h2>公式SNS</h2>
       </div>
@@ -177,20 +239,17 @@
       <div class="sns-grid">
         <a class="sns-card" href="https://www.instagram.com/tomori_ba?igsh=bTBqNHI4dDB3ZjMw&utm_source=qr" target="_blank" rel="noopener">
           <span>Instagram</span>
-          <strong>@tomori_ba</strong>
-          <small>通常イベント・開催情報</small>
+          <strong>通常イベント・開催情報</strong>
         </a>
 
         <a class="sns-card" href="https://www.instagram.com/tomoriba_dressup?igsh=MWRucHZod2NuNDVzNg%3D%3D&utm_source=qr" target="_blank" rel="noopener">
           <span>Dress Up Night</span>
-          <strong>ドレスコードイベント</strong>
-          <small>専用アカウント</small>
+          <strong>ドレスコードイベント専用アカウント</strong>
         </a>
 
         <a class="sns-card" href="https://www.tiktok.com/@tomoriba_osaka?_r=1&_t=ZS-97UerrVVEsT" target="_blank" rel="noopener">
           <span>TikTok</span>
-          <strong>@tomoriba_osaka</strong>
-          <small>イベントの雰囲気・開催情報</small>
+          <strong>イベントの雰囲気・開催情報</strong>
         </a>
       </div>
     </section>
