@@ -97,20 +97,15 @@ img {
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 880px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 880px;
+
+    padding-top: 120px;
 }
 
-.hero-logo{
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(52px, 10vw, 90px);
-    font-weight: 700;
-    letter-spacing: .28em;
-    color:#fff;
-    margin-bottom: 45px;
-}
+
 
 .eyebrow {
     font-size: 16px;
