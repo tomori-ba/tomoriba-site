@@ -84,7 +84,7 @@ img {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.46), rgba(0,0,0,.64)),
-    url("images/hero.jpg") center/cover;
+    url("hero.jpg") center/cover;
 }
 
 .hero::after {
