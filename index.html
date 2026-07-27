@@ -321,8 +321,16 @@
     aria-expanded="false"
     aria-controls="inviteMenu"
   >
-    <span class="invite-icon">↗</span>
+    <span class="invite-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 16V4"></path>
+        <path d="M8 8l4-4 4 4"></path>
+        <path d="M5 11v8h14v-8"></path>
+      </svg>
+    </span>
+    
     <span>友達を誘う</span>
+    
   </button>
 
   <p class="copy-message" id="copyMessage">
