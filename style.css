@@ -113,15 +113,15 @@ img {
     letter-spacing: .25em;
     color: #c79d5a;
     margin-top: 40px;
-    margin-bottom: 24px;
-}
+      margin-bottom: 24px;
+  }
 
-h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(36px, 7vw, 68px);
-    line-height: 1.05;
-    margin-bottom: 60px;
-    white-space: nowrap;
+  h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 6vw, 60px);
+    line-height: 1.15;
+    margin-bottom: 40px;
+    white-space: normal;
 }
 
 h2 {
