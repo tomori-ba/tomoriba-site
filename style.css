@@ -113,12 +113,12 @@ img {
     letter-spacing: .25em;
     color: #c79d5a;
     margin-top: 40px;
-      margin-bottom: 24px;
+      margin-bottom: 36px;
   }
 
   h1 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(32px, 6vw, 60px);
+      font-size: clamp(29px, 5.6vw, 60px);
     line-height: 1.3;
     margin-bottom: 40px;
     white-space: normal;
