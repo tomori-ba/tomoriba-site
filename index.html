@@ -300,6 +300,38 @@
     <a href="#schedule">開催日程へ戻る</a>
   </footer>
 
+
+  <!-- 友達を誘うボタン -->
+
+  <div class="invite-share">
+  <div class="invite-menu" id="inviteMenu">
+    <button type="button" class="invite-menu-item" id="lineShare">
+      LINEで送る
+    </button>
+
+    <button type="button" class="invite-menu-item" id="copyLink">
+      リンクをコピー
+    </button>
+  </div>
+
+  <button
+    type="button"
+    class="invite-button"
+    id="inviteButton"
+    aria-expanded="false"
+    aria-controls="inviteMenu"
+  >
+    <span class="invite-icon">↗</span>
+    <span>友達を誘う</span>
+  </button>
+
+  <p class="copy-message" id="copyMessage">
+    リンクをコピーしました
+  </p>
+  </div>
+
   <script src="script.js"></script>
+
+  
 </body>
 </html>
