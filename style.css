@@ -488,3 +488,136 @@ dd {
     flex-direction: column;
   }
 }
+
+/* =========================
+   Friend Invite
+========================= */
+
+.invite-share {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.invite-button,
+.invite-menu-item {
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid #c79d5a;
+  color: #fff;
+  background: rgba(15, 15, 15, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.invite-button {
+  min-width: 176px;
+  min-height: 58px;
+  padding: 0 24px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+}
+
+.invite-button:hover,
+.invite-menu-item:hover {
+  background: #c79d5a;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+.invite-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.invite-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.invite-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.invite-menu-item {
+  width: 210px;
+  min-height: 54px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.copy-message {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  width: max-content;
+  max-width: 240px;
+  margin: 0;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #111;
+  background: #c79d5a;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.copy-message.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .invite-share {
+    right: 16px;
+    bottom: 20px;
+  }
+
+  .invite-button {
+    min-width: 158px;
+    min-height: 52px;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+
+  .invite-menu-item {
+    width: 190px;
+    min-height: 50px;
+    font-size: 14px;
+  }
+}
