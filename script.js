@@ -98,6 +98,7 @@ if (
 }
 
 // 男女比を自動計算
+
 document.querySelectorAll('.gender-ratio').forEach(ratio => {
   const male = Number(ratio.dataset.male);
   const female = Number(ratio.dataset.female);
@@ -105,9 +106,12 @@ document.querySelectorAll('.gender-ratio').forEach(ratio => {
 
   if (total === 0) return;
 
-  const malePercent = (male / total) * 100;
-  const femalePercent = (female / total) * 100;
+  const malePercent = Math.round((male / total) * 100);
+  const femalePercent = 100 - malePercent;
 
   ratio.querySelector('.ratio-male').style.width = malePercent + '%';
   ratio.querySelector('.ratio-female').style.width = femalePercent + '%';
+
+  ratio.querySelector('.male-percent').textContent = malePercent + '%';
+  ratio.querySelector('.female-percent').textContent = femalePercent + '%';
 });
