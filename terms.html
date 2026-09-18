@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>利用規約・参加ルール｜TOMORIBA</title>
+  <meta
+    name="description"
+    content="TOMORIBA（トモリバ）の利用規約・参加ルールです。すべての参加者が安心して交流を楽しめる場所を守るためのルールをご案内しています。"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f6f0e7;
+      --paper: #fffaf2;
+      --text: #171717;
+      --muted: #6d665e;
+      --dark: #111111;
+      --dark-soft: #1d1d1d;
+      --gold: #b58a4a;
+      --border: rgba(23, 23, 23, 0.12);
+      --white: #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Sans",
+        "Yu Gothic",
+        "Noto Sans JP",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Header */
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 50;
+      width: 100%;
+      padding: 14px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(246, 240, 231, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+    }
+
+    .back-link {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: var(--gold);
+    }
+
+    /* Hero */
+
+    .terms-hero {
+      padding: 150px 5vw 85px;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .terms-hero-inner {
+      width: min(900px, 100%);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin-bottom: 22px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.25em;
+    }
+
+    .terms-hero h1 {
+      margin-bottom: 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-lead {
+      max-width: 700px;
+      color: rgba(255,255,255,.76);
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    /* Intro */
+
+    .intro {
+      padding: 65px 5vw 30px;
+    }
+
+    .intro-card {
+      width: min(900px, 100%);
+      margin: 0 auto;
+      padding: 32px;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+    }
+
+    .intro-card strong {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--gold);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+
+    .intro-card p {
+      color: var(--muted);
+    }
+
+    /* Terms */
+
+    .terms {
+      padding: 25px 5vw 90px;
+    }
+
+    .terms-inner {
+      width: min(900px, 100%);
+      margin: 0 auto;
+    }
+
+    .term-card {
+      margin-bottom: 18px;
+      padding: 32px;
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+    }
+
+    .term-number {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+    }
+
+    .term-card h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .term-card p {
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .term-card ul {
+      margin: 18px 0 4px 1.3em;
+      color: var(--muted);
+    }
+
+    .term-card li {
+      margin-bottom: 9px;
+      padding-left: 3px;
+    }
+
+    .important {
+      margin-top: 20px;
+      padding: 18px 20px;
+      background: rgba(181, 138, 74, 0.10);
+      border-left: 3px solid var(--gold);
+      border-radius: 10px;
+      color: var(--text) !important;
+    }
+
+    /* Philosophy */
+
+    .philosophy {
+      padding: 85px 5vw;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .philosophy-inner {
+      width: min(900px, 100%);
+      margin: 0 auto;
+    }
+
+    .philosophy h2 {
+      margin-bottom: 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 6vw, 46px);
+      line-height: 1.35;
+    }
+
+    .philosophy p {
+      max-width: 720px;
+      margin-bottom: 18px;
+      color: rgba(255,255,255,.72);
+    }
+
+    .philosophy-message {
+      margin-top: 38px !important;
+      color: var(--white) !important;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.9;
+    }
+
+    /* Footer */
+
+    .footer {
+      padding: 30px 5vw;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .footer a {
+      font-weight: 700;
+    }
+
+    .footer a:hover {
+      color: var(--gold);
+    }
+
+    @media (max-width: 600px) {
+      .site-header {
+        padding: 13px 5vw;
+      }
+
+      .logo {
+        font-size: 16px;
+      }
+
+      .back-link {
+        font-size: 12px;
+      }
+
+      .terms-hero {
+        padding-top: 125px;
+        padding-bottom: 65px;
+      }
+
+      .intro {
+        padding-top: 45px;
+      }
+
+      .intro-card,
+      .term-card {
+        padding: 24px 20px;
+        border-radius: 20px;
+      }
+
+      .term-card h2 {
+        font-size: 20px;
+      }
+
+      .philosophy {
+        padding: 65px 5vw;
+      }
+
+      .footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">TOMORIBA</a>
+    <a href="index.html" class="back-link">← トップへ戻る</a>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="terms-hero">
+      <div class="terms-hero-inner">
+
+        <p class="eyebrow">TERMS & RULES</p>
+
+        <h1>
+          利用規約・<br>
+          参加ルール
+        </h1>
+
+        <p class="hero-lead">
+          トモリバでは、すべての参加者が安心して交流を楽しめる場所を
+          つくることを大切にしています。<br>
+          お申し込み・ご参加の前に、以下の内容をご確認ください。
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="intro-card">
+
+        <strong>はじめに</strong>
+
+        <p>
+          本規約は、TOMORIBA（以下「トモリバ」）が開催するイベントへの
+          お申し込みおよび参加に関するルールを定めるものです。
+          イベントへお申し込みいただいた時点で、本規約をご確認のうえ
+          同意いただいたものとして取り扱います。
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- TERMS -->
+    <section class="terms">
+      <div class="terms-inner">
+
+
+        <!-- 01 -->
+        <article class="term-card">
+
+          <span class="term-number">01</span>
+          <h2>参加について</h2>
+
+          <p>
+            トモリバは、参加者同士の交流を目的とした
+            一般開放型の交流イベントです。
+          </p>
+
+          <p>
+            各イベントでは、年齢その他の参加条件を
+            個別に設定する場合があります。
+            お申し込みの際は、各イベントページまたは
+            申し込みフォームに記載された参加条件をご確認ください。
+          </p>
+
+          <p>
+            18歳未満の方はご参加いただけません。
+            また、各イベントで定める参加条件を満たしていないことが
+            判明した場合には、お申し込み後であっても
+            参加をお断りする場合があります。
+          </p>
+
+        </article>
+
+
+        <!-- 02 -->
+        <article class="term-card">
+
+          <span class="term-number">02</span>
+          <h2>年齢確認・身分証明書について</h2>
+
+          <p>
+            受付時またはイベント開催中に、年齢確認のため
+            身分証明書の提示をお願いする場合があります。
+          </p>
+
+          <p>
+            身分証明書をご提示いただけない場合や、
+            参加条件を満たしていることを確認できない場合には、
+            入場またはアルコール飲料の提供を
+            お断りする場合があります。
+          </p>
+
+          <p>
+            20歳未満の方へのアルコール飲料の提供は行いません。
+          </p>
+
+        </article>
+
+
+        <!-- 03 -->
+        <article class="term-card">
+
+          <span class="term-number">03</span>
+          <h2>アルコールの提供・安全管理について</h2>
+
+          <p>
+            アルコール飲料を提供するイベントでは、
+            ご自身の体調や飲酒量を考慮し、
+            節度をもってお楽しみください。
+          </p>
+
+          <p>
+            過度な飲酒、急性アルコール中毒、
+            飲酒に起因する事故やトラブル等を防止するため、
+            運営が安全上必要と判断した場合には、
+            アルコール飲料の提供を停止する場合があります。
+          </p>
+
+          <p>
+            また、ご本人または他の参加者の安全確保が必要と
+            運営が判断した場合には、休憩、飲酒の中止、
+            ご退場その他必要な対応をお願いする場合があります。
+          </p>
+
+        </article>
+
+
+        <!-- 04 -->
+        <article class="term-card">
+
+          <span class="term-number">04</span>
+          <h2>禁止行為</h2>
+
+          <p>
+            すべての参加者が安心して過ごせる環境を守るため、
+            以下の行為を禁止します。
+          </p>
+
+          <ul>
+            <li>
+              宗教、マルチ商法、ネットワークビジネス等への
+              勧誘を目的とする行為
+            </li>
+
+            <li>
+              営業、販売、投資その他これらに類する
+              勧誘を目的とする行為
+            </li>
+
+            <li>
+              他のイベント、団体、サービス等への
+              無断での勧誘・集客行為
+            </li>
+
+            <li>
+              相手が不快に感じる言動、威圧的な言動、
+              過度または一方的なナンパ行為
+            </li>
+
+            <li>
+              イベント中の付きまとい、
+              執拗なアプローチ
+            </li>
+
+            <li>
+              相手が望んでいないにもかかわらず、
+              連絡先の交換を繰り返し要求する行為
+            </li>
+
+            <li>
+              相手が望んでいないにもかかわらず、
+              イベント後にDM、LINEその他の手段で
+              繰り返し連絡する行為
+            </li>
+
+            <li>
+              暴力、脅迫、嫌がらせ、
+              他の参加者の安全を害する行為
+            </li>
+
+            <li>
+              過度な飲酒等により、
+              他の参加者または店舗・会場へ迷惑を及ぼす行為
+            </li>
+
+            <li>
+              イベントの進行または店舗・会場の営業を
+              妨害する行為
+            </li>
+
+            <li>
+              その他、参加者が安心して過ごせる環境を
+              著しく損なうと運営が判断する行為
+            </li>
+          </ul>
+
+        </article>
+
+
+        <!-- 05 -->
+        <article class="term-card">
+
+          <span class="term-number">05</span>
+          <h2>迷惑行為への対応・参加のお断り</h2>
+
+          <p>
+            トモリバでは、参加者から迷惑行為に関する報告が
+            あった場合、必要に応じて状況や事実関係を確認します。
+          </p>
+
+          <p>
+            複数の参加者から迷惑行為に関する報告があった場合のほか、
+            一人からの報告であっても、事実確認の結果、
+            悪質性が高いと運営が判断した場合には
+            必要な対応を行うことがあります。
+          </p>
+
+          <p>
+            禁止行為または重大な迷惑行為に該当すると
+            運営が判断した場合には、
+            その場での退場または今後のトモリバへの参加を
+            お断りする場合があります。
+          </p>
+
+          <p class="important">
+            重大な迷惑行為については、
+            参加者の安全・安心を優先するため、
+            事前の注意や警告を行わずに対応する場合があります。
+          </p>
+
+        </article>
+
+
+        <!-- 06 -->
+        <article class="term-card">
+
+          <span class="term-number">06</span>
+          <h2>キャンセルについて</h2>
+
+          <p>
+            お申し込み後にキャンセルされる場合は、
+            公式LINEまたは公式InstagramのDM等、
+            運営が指定する方法でご連絡ください。
+          </p>
+
+          <ul>
+            <li>開催2日前まで：無料</li>
+            <li>開催前日：参加費の50％</li>
+            <li>開催当日：参加費の100％</li>
+            <li>
+              無断キャンセル：参加費の100％ ＋
+              今後の参加をお断りする場合があります
+            </li>
+          </ul>
+
+          <p>
+            キャンセル料が発生した場合は、
+            銀行振込その他運営が指定する方法にて
+            お支払いいただきます。
+          </p>
+
+          <p class="important">
+            キャンセル規定は、各イベントの申し込みフォームにも
+            掲載しています。お申し込み前に必ずご確認ください。
+          </p>
+
+        </article>
+
+
+        <!-- 07 -->
+        <article class="term-card">
+
+          <span class="term-number">07</span>
+          <h2>写真・動画の撮影について</h2>
+
+          <p>
+            イベントの様子を写真または動画で撮影し、
+            トモリバのWebサイト、Instagram、TikTokその他の
+            広報媒体に掲載する場合があります。
+          </p>
+
+          <p>
+            撮影または掲載を希望されない方は、
+            当日の運営スタッフまでお申し出ください。
+            可能な範囲で撮影・掲載を避ける等の対応を行います。
+          </p>
+
+        </article>
+
+
+        <!-- 08 -->
+        <article class="term-card">
+
+          <span class="term-number">08</span>
+          <h2>貴重品・持ち物について</h2>
+
+          <p>
+            貴重品および持ち物は、
+            原則として各自で管理してください。
+          </p>
+
+          <p>
+            紛失、盗難、破損等が発生した場合には、
+            速やかに運営スタッフへお申し出ください。
+            運営に故意または重大な過失がある場合を除き、
+            運営が責任を負いかねる場合があります。
+          </p>
+
+        </article>
+
+
+        <!-- 09 -->
+        <article class="term-card">
+
+          <span class="term-number">09</span>
+          <h2>参加者間のトラブルについて</h2>
+
+          <p>
+            イベント中に参加者同士のトラブルや迷惑行為が
+            発生した場合には、速やかに運営スタッフへ
+            ご相談ください。
+          </p>
+
+          <p>
+            運営は、安全なイベント運営のため、
+            状況に応じて可能な範囲で必要な対応を行います。
+          </p>
+
+          <p>
+            一方、参加者同士の個人的なやり取り、
+            金銭の貸し借り、イベント終了後の交友関係等については、
+            原則として当事者間でご対応いただきます。
+          </p>
+
+        </article>
+
+
+        <!-- 10 -->
+        <article class="term-card">
+
+          <span class="term-number">10</span>
+          <h2>イベント内容の変更・中止について</h2>
+
+          <p>
+            天候、災害、会場都合、交通機関の状況、
+            その他やむを得ない事情により、
+            開催日時、会場、提供内容その他のイベント内容を
+            変更または中止する場合があります。
+          </p>
+
+          <p>
+            重要な変更がある場合には、
+            公式SNS、メールその他運営が適切と判断する方法で
+            可能な範囲でご案内します。
+          </p>
+
+        </article>
+
+
+        <!-- 11 -->
+        <article class="term-card">
+
+          <span class="term-number">11</span>
+          <h2>個人情報の取り扱いについて</h2>
+
+          <p>
+            お申し込み時にご提供いただいた氏名、
+            メールアドレスその他の個人情報は、
+            イベントの受付、参加者への連絡、安全管理、
+            キャンセル対応その他イベント運営に必要な範囲で
+            利用します。
+          </p>
+
+          <p>
+            取得した個人情報は適切に管理し、
+            法令に基づく場合その他正当な理由がある場合を除き、
+            ご本人の同意なく第三者へ提供しません。
+          </p>
+
+        </article>
+
+
+        <!-- 12 -->
+        <article class="term-card">
+
+          <span class="term-number">12</span>
+          <h2>本規約の変更について</h2>
+
+          <p>
+            本規約は、イベントの運営方法、
+            サービス内容その他の事情に応じて、
+            必要に応じて変更する場合があります。
+          </p>
+
+          <p>
+            変更後の規約は、本Webサイトへの掲載その他
+            適切な方法によりお知らせします。
+          </p>
+
+        </article>
+
+
+      </div>
+    </section>
+
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy">
+
+      <div class="philosophy-inner">
+
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+
+        <h2>
+          人数よりも、<br>
+          「また来たい」と思える場所を。
+        </h2>
+
+        <p>
+          トモリバが目指しているのは、
+          単に多くの人が集まるイベントではありません。
+        </p>
+
+        <p>
+          開催回数や規模を必要以上に大きくすることよりも、
+          参加した方に「また来たい」と思っていただける場所で
+          あり続けることを大切にしています。
+        </p>
+
+        <p>
+          初めて参加する方も、一人で参加する方も、
+          何度も来てくださる方も。
+          誰もが安心して自然に交流できる場所をつくること。
+        </p>
+
+        <p>
+          そのために、他の参加者の安心を損なう行為については、
+          運営として必要な対応を行います。
+        </p>
+
+        <p class="philosophy-message">
+          また帰ってきたくなる、いつもの場所へ。
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>© TOMORIBA</p>
+    <a href="index.html">トップページへ戻る</a>
+  </footer>
+
+
+</body>
+</html>
