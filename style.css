@@ -689,3 +689,9 @@ dd {
   padding: 0;
   background: #e96b78;
 }
+
+
+.early-price {
+  color: #c49a52;
+  font-size: 0.9em;
+}
