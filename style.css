@@ -691,7 +691,11 @@ dd {
 }
 
 
-.early-price {
+.early-price-row dt,
+.early-price-row dd {
   color: #c49a52;
-  font-size: 0.9em;
+}
+
+.early-price-row dd {
+  white-space: nowrap;
 }
