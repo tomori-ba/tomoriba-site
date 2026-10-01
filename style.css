@@ -259,7 +259,7 @@ h2 {
   margin-bottom: 22px;
 }
 
-.event-detail > div {
+.event-detail div {
   display: grid;
   grid-template-columns: 76px 1fr;
   gap: 12px;
