@@ -115,3 +115,28 @@ document.querySelectorAll('.gender-ratio').forEach(ratio => {
   ratio.querySelector('.male-percent').textContent = malePercent + '%';
   ratio.querySelector('.female-percent').textContent = femalePercent + '%';
 });
+
+// 開催地域の切り替え（カード左側の都市名から自動判別）
+{
+  const filter = document.querySelector('.region-filter');
+  const empty = document.querySelector('.region-empty');
+  const regions = {west: ['大阪', '神戸', '兵庫', '姫路'], east: ['京都', '奈良']};
+  if (filter && empty) {
+    const buttons = filter.querySelectorAll('button[data-region]');
+    const cards = document.querySelectorAll('#schedule .event-list .event-card');
+    function showRegion(region) {
+      let count = 0;
+      cards.forEach(card => {
+        const city = card.querySelector('.date-city')?.textContent.trim();
+        const visible = region === 'all' || (regions[region] || []).includes(city);
+        card.hidden = !visible;
+        if (visible) count++;
+      });
+      buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.region === region)));
+      empty.hidden = count !== 0;
+    }
+    buttons.forEach(button => button.addEventListener('click', () => showRegion(button.dataset.region)));
+    showRegion('all');
+    filter.hidden = false;
+  }
+}
